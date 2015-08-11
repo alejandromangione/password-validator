@@ -6,5 +6,10 @@
     "Alejandro Mangione <alejandro.ferraiolo@brasilct.com>"
   ],
   "main": "dist/passwordValidator.js",
+  "keywords": [
+    "validator",
+    "validation",
+    "password"
+  ],
   "license": "MIT"
 }

@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Demo - Validate Password</title>
+  </head>
+  <script src="../dist/passwordValidator.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('[type="text"]').on("keyup", function(){
+
+      var value = $(this).val();
+
+      var result = passwordRules.validate( $(this).val() );
+
+      if(result)
+        $('.result').html( "It is valid" );
+      else 
+        $('.result').html( "It not valid" );
+
+    })
+  })
+  </script>
+  <body>
+    <input type="text">
+    <span class="result"></span>
+
+    <h3>Example valid strings:</h3>
+    <ul>
+      <li>@foo2015</li>
+      <li>foo-2015</li>
+    </ul>
+  </body>
+</html>

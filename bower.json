@@ -1,0 +1,10 @@
+{
+  "name": "password-validator",
+  "version": "0.1.0",
+  "homepage": "https://github.com/alejandromangione/password-validator",
+  "authors": [
+    "Alejandro Mangione <alejandro.ferraiolo@brasilct.com>"
+  ],
+  "main": "dist/passwordValidator.js",
+  "license": "MIT"
+}

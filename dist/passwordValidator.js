@@ -4,13 +4,12 @@ passwordRules._min = 6;
 passwordRules._max = 20;
 passwordRules._sequences = [ ["123456789"], ["abcdefghijklmnopqrstuvwxyz"] ];
 
+
 passwordRules.checkCharacters = function(str) {
   //
   if(
-    (new RegExp("\\W")).test(str) &&
-    (new RegExp("\\w")).test(str) &&
     !(new RegExp("\\ ")).test(str) &&
-    (new RegExp(/^(?=.*\d)(?=.*[a-zA-Z])(?=.*[\W_]).{6,20}$/)).test(str)
+    (new RegExp(/^(?=.*\d)(?=.*[a-zA-Z])(?=.*[\W\_]).{6,20}$/)).test(str)
     )
   {
     return true;
